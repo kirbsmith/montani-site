@@ -1,0 +1,10 @@
+{
+    "shades" : [
+    { "name": "Light Filtering 1", "id": 1, "price": 18, "image": "shade1.jpg"},
+    { "name": "Light Filtering 2", "id": 2, "price": 24, "image": "shade2.webp"},
+    { "name": "Light Filtering 3", "id": 3, "price": 25, "image": "shade1.jpg"},
+    { "name": "Room Darkening 1", "id": 4, "price": 28, "image": "shade4.jpg"},
+    { "name": "Room Darkening 2", "id": 5, "price": 31, "image": "shade4.jpg"},
+    { "name": "Room Darkening 3", "id": 6, "price": 35, "image": "shade4.jpg"}
+    ]
+}
