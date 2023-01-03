@@ -5,18 +5,26 @@
       <img :src=getImgUrl(shade.image) alt="" class="w-64"/>
       <h3 class="py-2 text-2xl">{{ shade.name }}</h3>
       <p class="text-lg">${{ shade.price }}.00 per square foot</p>
-      <router-link to="/" class="bg-blue-400 rounded-lg py-3 px-4 mt-4 hover:shadow-xl hover:duration-500 hover:bg-blue-800 hover:text-white">View this shade in available fabrics</router-link>
+      <ChoiceDisplay />
+      <p v-if="!shadeDisplay">test</p>
+      <p v-else>shade selection hidden</p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ChoiceDisplay from '../components/shadeFabricDisplay.vue'
 
 export default defineComponent({
+  components: {
+    ChoiceDisplay
+  },
+
   data(){
     return {
-      shades: []
+      shades: [],
+      shadeDisplay: false
     }
   },
 
